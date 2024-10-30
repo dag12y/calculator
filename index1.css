@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+div {
+    margin: 5px 0;
+}
+
+input[type="text"] {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style for the display input */
+input[name="display"] {
+    width: 248px;
+    margin-bottom: 10px;
+    background-color: #444;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Operator buttons */
+input[value="+" ],
+input[value="-" ],
+input[value="*" ],
+input[value="/" ],
+input[value="=" ] {
+    background-color: #ff9500;
+}
+
+/* Clear button */
+input[value="c" ] {
+    background-color: #a5a5a5;
+}
+
+/* Special function buttons */
+input[value="DEL"],
+input[value="√"],
+input[value="%"] {
+    background-color: #a5a5a5;
+    font-size: 16px;
+}
